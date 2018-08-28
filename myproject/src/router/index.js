@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Home from "../components/home.vue"
-import Dian from "../components/dian.vue"
-import Ying from "../components/ying.vue"
-import Shequ from "../components/shequ.vue"
-import Mine from "../components/mine.vue"
-import Pub from "../components/pub.vue"
-
+import Search from "../components/search.vue"
+import Xican from "../components/xican.vue"
+import Djpuzi_cai from "../components/djpuzi_cai.vue"
+import Djpuzi_yhq from "../components/djpuzi_yhq.vue"
+import Ddxinxi from "../components/ddxinxi.vue"
+import Caipxx from "../components/caipxx.vue"
+import Lisddxinx from "../components/lisddxinx.vue"
 
 Vue.use(Router)
 
@@ -16,58 +16,40 @@ Vue.use(Router)
 //路由页面
 export default new Router({
   routes: [
-    {
-      path:"/home",
-      component:Home
-    },
-    {
-      path:"/dian",
-      component:Dian
-    },
-    {
-      path:"/ying",
-      component:Ying
-    },{
-      path:"/mine",
-      component:Mine
-    },
-    {
-      path:"/shequ",
-      component:Shequ
-    },
-    {
-      path:"/pub",
-      component:Pub,
-          children:[
-          {
-            path:"/home",
-            component:Home
-          },
-          {
-            path:"/shequ",
-            component:Shequ
-          },
-          {
-            path:"/ying",
-            component:Ying
-          },
-          {
-            path:"/mine",
-            component:Mine
-          },
-          {
-            path:"/dian",
-            component:Dian
-          }
-        ]
-          
-          
+   {
+      path:"/lisddxinx",
+      component:Lisddxinx
     },
 
+    {
+      path:"/search",
+      component:Search
+    },
+    {
+      path:"/xican",
+      component:Xican
+    },
+    {
+      path:"/djpuzi_cai",
+      component:Djpuzi_cai
+    },
+    {
+      path:"/djpuzi_yhq",
+      component:Djpuzi_yhq
+    },
+     {
+      path:"/ddxinx",
+      component:Ddxinxi
+    },
+    {
+      path:"/caipxx",
+      component:Caipxx
+    },
+   
 
     {
       path:"/",
-      redirect:"/home"
+      redirect:"/search"
     }
   ]
 })
