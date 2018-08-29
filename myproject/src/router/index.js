@@ -8,6 +8,7 @@ import Djpuzi_yhq from "../components/djpuzi_yhq.vue"
 import Ddxinxi from "../components/ddxinxi.vue"
 import Caipxx from "../components/caipxx.vue"
 import Lisddxinx from "../components/lisddxinx.vue"
+import Lisddxinx from "../components/lisddxinx.vue"
 
 Vue.use(Router)
 
